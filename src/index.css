@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    font-family: 'Cairo', 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  html.dark,
+  body.dark,
+  .dark {
+    color-scheme: dark;
+    background-color: #020617;
+    color: #f8fafc;
+  }
+}
+
+/* Font Family Classes */
+.font-cairo {
+  font-family: 'Cairo', system-ui, sans-serif !important;
+}
+
+.font-alexandria {
+  font-family: 'Alexandria', system-ui, sans-serif !important;
+}
+
+.font-amiri {
+  font-family: 'Amiri', serif !important;
+}
+
+.font-system {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+/* Text Size Variations (for Persona 1: Hoda - Low vision) */
+.text-size-normal {
+  font-size: 14px;
+}
+
+.text-size-large {
+  font-size: 17px;
+}
+
+.text-size-large button,
+.text-size-large input,
+.text-size-large textarea {
+  font-size: 16px !important;
+}
+
+.text-size-xlarge {
+  font-size: 20px;
+}
+
+.text-size-xlarge button,
+.text-size-xlarge input,
+.text-size-xlarge textarea {
+  font-size: 18px !important;
+}
+
+/* Page Theme Variations */
+.theme-high-contrast {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.theme-high-contrast div,
+.theme-high-contrast header,
+.theme-high-contrast footer,
+.theme-high-contrast main {
+  border-color: #ffffff !important;
+}
+
+.theme-high-contrast button {
+  border-width: 2px !important;
+  border-color: #ffffff !important;
+}
+
+.theme-soft {
+  background-color: #f2f9f6 !important;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.6);
+}

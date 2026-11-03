@@ -1,0 +1,10 @@
+{
+  "name": "Sehtai",
+  "description": "Instantly transform your project files into a fully functional application with automated build processing.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
