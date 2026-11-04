@@ -73,7 +73,7 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Brand - Logo & صحتي */}
           <div className="flex items-center gap-2.5">
             <img
-              src="/assets/aistudio/logo_7537380a.png"
+              src="/logo.png"
               alt={isAr ? 'شعار صحتي' : 'Sehati Logo'}
               className="w-9 h-9 object-contain rounded-lg"
             />

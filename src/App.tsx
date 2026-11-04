@@ -68,7 +68,7 @@ export default function App() {
       link.rel = 'icon';
       document.head.appendChild(link);
     }
-    link.href = '/assets/aistudio/logo_7537380a.png';
+    link.href = '/logo.png';
   }, []);
 
   // Sync lang, dir, and dark theme attributes
